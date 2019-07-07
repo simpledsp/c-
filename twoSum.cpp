@@ -7,7 +7,7 @@
         for(int i=0; i<nums.size(); ++i){
             mp[nums[i]].push_back(i);            
         }
-        //ac(mp) 
+        //acmap(mp,int, vector<int>) 
         //ac(nums)
         for(int i=0; i<nums.size(); ++i){
             //a(i)
