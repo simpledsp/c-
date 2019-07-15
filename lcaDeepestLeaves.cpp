@@ -1,4 +1,8 @@
-    void helper(TreeNode* node, int&dep, int&n, map<TreeNode*, pair<int,int>>& mp){
+#define SIMPLEDSP
+#include "cheader.h"
+//do not use define or include any header file
+
+void helper(TreeNode* node, int&dep, int&n, map<TreeNode*, pair<int,int>>& mp){
         if(!node->left && !node->right){
             dep=0; 
             n=1;
