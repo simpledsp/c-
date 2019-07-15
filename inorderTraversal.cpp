@@ -1,4 +1,8 @@
-    vector<int> inorderTraversal(TreeNode* root) {
+#define SIMPLEDSP
+#include "cheader.h"
+//do not use define or include any header file
+
+vector<int> inorderTraversal(TreeNode* root) {
         //ahd(root)        
         vector<int> ret;
         if(!root)
