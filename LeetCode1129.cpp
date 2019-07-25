@@ -24,27 +24,27 @@ vector<int> shortestAlternatingPaths(int n, vector<vector<int>>& red_edges, vect
         {
             ++len;
             int k=que.size();
-        while(k-->0)
-        {
-            auto cur = que.front(); que.pop();
-            //ac(cur)
-            //dsp
-            for (auto pr : g[cur.first]) {
-                if(cur.second==pr.second){
-                    continue;
-                }
-                
-                if(visit.count(pr)!=0)
-                    continue;
-                                
-                visit.insert(pr);
-                que.push(pr);
-                if(ret[pr.first]==-1){
-                    ret[pr.first]=len;
-                }
+            while(k-->0)
+            {
+                auto cur = que.front(); que.pop();
+                //ac(cur)
                 //dsp
+                for (auto pr : g[cur.first]) {
+                    if(cur.second==pr.second){
+                        continue;
+                    }
+
+                    if(visit.count(pr)!=0)
+                        continue;
+
+                    visit.insert(pr);
+                    que.push(pr);
+                    if(ret[pr.first]==-1){
+                        ret[pr.first]=len;
+                    }
+                    //dsp
+                }
             }
-        }
         }
         
         return ret;
