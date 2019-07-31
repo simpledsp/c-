@@ -1,2 +1,1 @@
-# c-
-c++ samples
+欢迎到simpledsp.com使用leetcode调试插件，轻松查看复杂的中间变量
