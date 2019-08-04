@@ -5,7 +5,7 @@
 //add your functions here
 int longestWPI(const vector<int>& hours) {
         int n=hours.size();
-        //ac(hours)
+        //a(hours)
         vector<int> bin(n+1,0);
         for(int i=1; i<n+1; ++i){
             if(hours[i-1]>8)
@@ -13,7 +13,7 @@ int longestWPI(const vector<int>& hours) {
             else
                 bin[i]=-1;
         }
-        //ac(bin)
+        //a(bin)
         //dsp
         
         for(int i=1; i<n+1; ++i){
@@ -21,7 +21,7 @@ int longestWPI(const vector<int>& hours) {
         }
         
         int L=0;
-        //ac(L)
+        //a(L)
         for(int i=0; i<n; ++i){
             for(int j=n; j>=i+L; --j){
                 //a(i)
