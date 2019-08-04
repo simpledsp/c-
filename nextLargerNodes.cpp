@@ -6,11 +6,11 @@
         stack<pair<int,int>> stk;
         vector<int> ret;
         ListNode* p=head;
-        //achd(head)
-        //ac(p)
+        //ahd(head)
+        //a(p)
         //lk(head,p)
-        //ac(stk)
-        //ac(ret)
+        //a(stk)
+        //a(ret)
         int i=0;
         while(p){
             ret.push_back(0);   
