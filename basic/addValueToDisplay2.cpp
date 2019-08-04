@@ -11,7 +11,7 @@ int main(int argc, char* argv[])
     int x=1;
     int y=10;
     //a(x)
-    //ac(y)
+    //a(y)
     for(int i=0; i<10; ++i){
         //dsp
     }
