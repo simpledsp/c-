@@ -6,7 +6,7 @@ vector<int> shortestAlternatingPaths(int n, vector<vector<int>>& red_edges, vect
         for(auto v:blue_edges){
             g[v[0]].insert({v[1], "blue"});
         }
-        //ac(g)
+        //a(g)
         vector<int> ret(n, -1);
         ret[0]=0;
         
@@ -14,10 +14,10 @@ vector<int> shortestAlternatingPaths(int n, vector<vector<int>>& red_edges, vect
         visit.insert({0, "na"});
         queue<pair<int,string>> que; 
         que.push({0,"na"});
-        //ac(que)
+        //a(que)
         int len=0;
-        //ac(len)
-        //ac(ret)
+        //a(len)
+        //a(ret)
         while (!que.empty()) 
         {
             ++len;
@@ -25,7 +25,7 @@ vector<int> shortestAlternatingPaths(int n, vector<vector<int>>& red_edges, vect
             while(k-->0)
             {
                 auto cur = que.front(); que.pop();
-                //ac(cur)
+                //a(cur)
                 //dsp
                 for (auto pr : g[cur.first]) {
                     if(cur.second==pr.second){
