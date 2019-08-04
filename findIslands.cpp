@@ -41,7 +41,7 @@ int main(int argc, char* argv[])
 {
     //call your function here
     vector<vector<int>> map={{1,0,0,1},{0,1,1,0},{0,1,1,1},{1,0,1,1}};
-    //ac(map)
+    //a(map)
     int ret = findIslands(map);
     //a(ret)
     //dsp
