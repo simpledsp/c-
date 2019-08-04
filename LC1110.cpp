@@ -8,16 +8,16 @@
         for(int v:to_delete){
             st.insert(v);
         }
-        //achd(root)
-        //ac(st)
+        //ahd(root)
+        //a(st)
         vector<TreeNode*> ret;        
         queue<pair<TreeNode*, bool>> qu;
         qu.push({root, true});        
         
         map<TreeNode*, TreeNode*> mp;
-        //acmap(mp,TreeNode*, TreeNode*)
-        //ac(qu)
-        //achd(ret)
+        //amap(mp,TreeNode*, TreeNode*)
+        //a(qu)
+        //ahd(ret)
         mp[root]=NULL;
         
         while(qu.size()>0){
