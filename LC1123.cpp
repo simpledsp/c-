@@ -71,7 +71,7 @@ int main(int argc, char* argv[])
 {
     //call your function here
     TreeNode* root=intVecToTree({1,2,-1,3,4,-1,-1,5});
-    //achd(root)
+    //ahd(root)
     TreeNode* ret=lcaDeepestLeaves(root);
     //a(ret)
     //dsp
